@@ -36,23 +36,28 @@ function destapar(numeroRandom, valor) {
       valorImagen.push(numeroRandom);
       idImagen.push(valor);
 
-      console.log("Primera Carta" + " " + idImagen);
+      
 
     } else if (idImagen.length === 1 && idImagen[0]!=valor) {
       document.getElementById("img" + valor).className = "destapado";
       valorImagen.push(numeroRandom);
       idImagen.push(valor);
-      console.log("segunda Carta" + " " + idImagen);
+      
 
       if (valorImagen[0] === valorImagen[1]) {
         cartasAdivinadas += 2;
-        valorImagen = []
-        idImagen = []
-        console.log(cartasAdivinadas);
+        valorImagen = [];
+        idImagen = [];
+        
 
         if (cartasAdivinadas == matriz.length) {
+
+          setTimeout(ganasste,700);
+          function ganasste(){
+         
           alert("GANASTE !!! ... Creando nuevo tablero");
           generador();
+        }
         }
       } else {
         function ocultarImagenes() {
@@ -63,7 +68,7 @@ function destapar(numeroRandom, valor) {
           valorImagen = [];
           idImagen = [];
         }
-        setTimeout(ocultarImagenes, 500);
+        setTimeout(ocultarImagenes, 700);
 
 
       }
