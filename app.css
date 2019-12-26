@@ -19,11 +19,11 @@ grid-column-end: 4;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(4, 80px);
     max-width: 50%;
-    grid-gap: 3px;
+    grid-gap: 10px;
     background-color: aqua;    
     grid-column-start: 2;
     grid-column-end: 4;
-   padding: 3px 3px 3px 3px;
+    padding: 10px 10px 10px 10px;
     border:black 1px solid;
   
 }
@@ -48,10 +48,15 @@ background-color: blueviolet;
 
 }
 
-#img{
+.tapado{
     cursor: pointer;
+    filter: brightness(0) 
 }
-.tapa {
-        background-color: black;
-         filter:brightness(0.0);
+
+.destapado{
+    
+    filter: brightness(1) 
 }
+
+
+
